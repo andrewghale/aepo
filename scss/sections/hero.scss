@@ -1,0 +1,129 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("/img/main.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  max-height: 85vh;
+  padding: 0 2rem;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  @include media-breakpoint-down(md) {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.title h1 {
+  margin-bottom: 1rem;
+  @include media-breakpoint-down(md) {
+    font-size: 5vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 10vw;
+  }
+}
+
+.title h3 {
+  @include media-breakpoint-down(md) {
+    font-size: 3vw;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 4vw;
+  }
+}
+
+#next-arrow {
+  width: 60px;
+}
+
+#prev-arrow {
+  width: 60px;
+}
+
+.button-left {
+  height: 60px;
+  background-image: url("/img/nav_btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button-right {
+  height: 60px;
+  background-image: url("/img/nav_btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.button-left:hover {
+  background-image: url("/img/nav_btn_hover.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.button-right:hover {
+  background-image: url("/img/nav_btn_hover.svg");
+  transform: unset;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow-position {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  width: 100%;
+  @include media-breakpoint-down(md) {
+    height: 100vw;
+    top: 43%;
+    left: 0px;
+  @include media-breakpoint-down(xs) {
+    top: 30%;
+  }
+  }
+}
+
+.slick-container {
+  // display: flex;
+  // flex-direction: row;
+  width: 100%;
+  // outline: none;
+}
+
+.photo-slides {
+  margin-right: -15px;
+  margin-left: -15px;
+  overflow: hidden;
+}
+
+.pic {
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("/img/main.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vw;
+  max-height: 85vh;
+  padding: 0 2rem;
+  outline: none;
+
+  // Prevents slick slides flickering
+  // perspective: 2000;
+  // backface-visibility: hidden;
+}

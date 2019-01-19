@@ -1,0 +1,73 @@
+#how-was-that {
+  @include make-row();
+  height: 450px;
+  background-color: $section-background-grey;
+  text-align: center;
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
+}
+
+.buttons {
+  margin: 4rem 0rem;
+}
+
+.btn {
+  width: 220px;
+  height: 48px;
+  outline: none;
+  text-transform: uppercase;
+
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 0px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: black;
+  background-color: #ffffff;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  filter: saturate(50%);
+}
+
+/* inverse colors on mouse-over */
+.btn:hover {
+  color: black;
+  border-color: currentColor;
+  background-color: white;
+}
+
+.btn:hover,
+.btn:focus {
+  color: black;
+  border-color: currentColor;
+  background-color: white;
+  outline: none;
+}
+
+.btn:hover {
+  color: black;
+  border-color: currentColor;
+  background-color: white;
+}
+
+/* make sure we have a visible focus ring */
+.btn:focus {
+  outline: none;
+  box-shadow: 1px 1px 2px rgb(224, 224, 224),
+   0 0 45px rgb(225, 226, 226),
+    0 0 5px rgb(216, 217, 218);
+}

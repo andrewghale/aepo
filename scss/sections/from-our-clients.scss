@@ -1,0 +1,51 @@
+#from-our-clients {
+  @include make-row();
+  height: 600px;
+  background-color: $section-background-white;
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
+}
+
+
+.quotes-container {
+  margin: 5rem auto;
+  width: 700px;
+  // border: 1px solid green;
+  @include media-breakpoint-down(md) {
+    margin: 2rem auto;
+  }
+}
+
+.quote-slide {
+  // border: 1px solid red;
+  display: flex;
+  width: auto;
+}
+
+.quote-slide-inner {
+  display: inline-flex;
+}
+
+.quote-image {
+  height: auto;
+  width: 144px;
+  // border: 1px solid blue;
+  margin-right: 2rem;
+}
+
+.quote-text {
+  height: auto;
+  width: 100%;
+  // border: 1px solid orange;
+  text-align: justify;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: rgb(201, 199, 199);
+  // border: 1px rgb(160, 67, 67);
+  border-radius: 50%;
+}

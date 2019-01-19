@@ -1,0 +1,42 @@
+#footer {
+  @include make-row();
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-breakpoint-down(md) {
+    height: auto;
+  }
+}
+
+.footer-logo {
+  margin: 2rem;
+}
+
+#footer p {
+  margin: 1rem;
+}
+
+#footer .nav {
+  margin: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav-list {
+  display: flex;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 2rem;
+  }
+}
+
+.footer-nav-list li {
+  @include media-breakpoint-down(sm) {
+    font-family: "HelveticaNeue";
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+  }
+}

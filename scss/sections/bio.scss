@@ -1,0 +1,17 @@
+#bio {
+  @include make-row();
+  text-align: center;
+  align-items: center;
+  height: 450px;
+  background-color: $section-background-white;
+  @include media-breakpoint-down(md) {
+    // border: 1px solid red;
+    height: auto;
+  }
+}
+
+#bio div p {
+  @include media-breakpoint-down(md) {
+  margin-bottom: 4rem;
+  }
+}

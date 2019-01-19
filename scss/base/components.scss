@@ -1,0 +1,27 @@
+.section-title {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.width-container {
+  @include make-col(8);
+  margin: 0 auto;
+  height: 100%;
+  @include media-breakpoint-down(lg) {
+    @include make-col(11);
+  }
+  @include media-breakpoint-down(md) {
+    @include make-col(11);
+  }
+}
+
+.small-width-container {
+  @include make-col(6);
+  margin: 0 auto;
+  height: 100%;
+
+  @include media-breakpoint-down(md) {
+    @include make-col(11);
+  }
+}

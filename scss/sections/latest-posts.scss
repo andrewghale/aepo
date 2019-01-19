@@ -1,0 +1,115 @@
+#latest-posts {
+  @include make-row();
+  height: 600px;
+  background-color: $section-background-grey;
+  @include media-breakpoint-down(md) {
+    height: fit-content;
+  }
+}
+
+// .latest-posts-container {
+//   width: auto;
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 auto;
+// }
+
+.posts {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 2rem;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+  transition: 0.2s ease-out;
+  @include media-breakpoint-down(md) {
+    margin: 1rem 1rem;
+  }
+}
+
+.post:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
+
+.post:hover img {
+  filter: brightness(0.5);
+  transition: 0.2s ease-in-out;
+}
+
+.post:hover .fade-text {
+  display: flex;
+  opacity: 1;
+}
+
+.post-image {
+  height: 325px;
+  width: 325px;
+  overflow: hidden;
+}
+
+.post-image img {
+  height:  325px;
+  width: auto;
+}
+
+.post-content {
+  color: white;
+  height: 325px;
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -100%;
+}
+
+.post-content h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+.fade-text {
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fade-text p {
+  color: $text-light;
+  text-align: center;
+}
+
+.fade-text span a {
+  color: $text-light;
+}
+
+.fade-text span {
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.fade-text span p {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.fade-text span:last-child {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: $text-light;
+}
