@@ -1,15 +1,23 @@
 {
-  "name": "grainyeffect",
+  "name": "aepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewghale/aepo.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewghale/aepo/issues"
+  },
+  "homepage": "https://github.com/andrewghale/aepo#readme",
   "devDependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.1.3",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -17,17 +25,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1"
-  },
-  "dependencies": {
+    "gulp-uglify": "^3.0.1",
     "gulp-uglify-es": "^1.0.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andrewghale/grainy-effect.git"
-  },
-  "bugs": {
-    "url": "https://github.com/andrewghale/grainy-effect/issues"
-  },
-  "homepage": "https://github.com/andrewghale/grainy-effect#readme"
+  }
 }
